@@ -1,0 +1,47 @@
+nav {
+    background-color: Black;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.img {
+    float: left;
+    width: 170px;
+}
+
+ul li a {
+    text-decoration: underline;
+    color: white;
+}
+
+li {
+    display: inline;
+}
+
+.qualite {
+    display: inline;
+}
+
+.box {
+    background: grey;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    color: black;
+    float: right;
+}
+
+ul {
+    padding: 17px 30px 20px 30px;
+}
+
+body {
+    max-width: 1000px;
+}
+
+.text {
+    margin-left: 500px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 18pt;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Jarditou</title>
+</head>
+
+<body>
+    <img class="img" src="elements jarditou/jarditou_html_zip/images/jarditou_logo.jpg">
+
+    <div class="text" id="slogan">
+        <p>Tout le jardin</p>
+    </div>
+
+    <nav>
+        <ul type="disc">
+            <li><a href="index Jarditou.html">accueil</a></li>
+            <li><a href="Tableau.html">Tableau</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+    </nav>
+    </ul>
+    <img src="elements jarditou/jarditou_html_zip/images/promotion.jpg" width="1000px">
+    <div class="outer">
+        <div class="box" id="colonne droite">Colonne droite</div>
+        <h1>Contact</h1>
+        <hr>
+        <p>*Ces zones sont obligatoires</p>
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <form action="destination.php" method="post">
+                <label for="nom">Votre nom*:</label><input type="text" name="nom" id="votre nom"><br>
+                <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="Votre prenom"> <br>
+                <label for="sexe">sexe*:</label><input type="radio" name="sexef" id="Féminin">Féminin
+                <input type="radio" name="sexem" id="Masculin">Masculin <br>
+                <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date"><br>
+                <label for="nom">Code postal*:</label><input type="text" name="Code" id="Code postal"><br>
+                <label for="nom">Adresse:</label><input type="text" name="Adresse" id="Adresse"><br>
+                <label for="nom">Ville:</label><input type="text" name="Ville" id="Ville"><br>
+                <label for="nom">Email*:</label><input type="text" name="Adresse" id="Adresse"><br>
+            </form>
+
+            <input type="submit" value="Envoyer">
+            <input type="submit" value="Annuler">
+        </fieldset>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <form action="destination.php" method="post">
+                <label for="sujet">Sujet*</label>
+                <select id="sujet"> 
+        <option value="" selected>Veuillez séléctionner un sujet</option>
+        <option value="Mes commandes">Mes commandes</option>
+        <option value="Question">Question sur un produit</option>
+        <option value="Réclamation">Réclamation</option>
+        <option value="Autre">Autre</option>
+    </select><br>
+                <label for="nom">Votre question*:</label><input type="text" name="question" id="Votre question"><br>
+                <input type="checkbox">* J'accepte le traitement informatique de ce formulaire
+
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Horaires</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                    </ul>
+                </nav>
+</body>
+
+
+
+
+
+
+</html>
