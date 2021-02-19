@@ -9,6 +9,10 @@ nav {
     width: 170px;
 }
 
+.promo {
+    width: 1000px;
+}
+
 ul li a {
     text-decoration: underline;
     color: white;
@@ -20,15 +24,6 @@ li {
 
 .qualite {
     display: inline;
-}
-
-.box {
-    background: grey;
-    width: 300px;
-    height: 500px;
-    margin: auto;
-    color: black;
-    float: right;
 }
 
 ul {
@@ -44,4 +39,21 @@ body {
     margin-top: 0px;
     font-weight: bold;
     font-size: 18pt;
+}
+
+.barbuc {
+    width: 100px;
+}
+
+.contenu-principal {
+    display: flex;
+}
+
+.text-accueil {
+    width: 70%;
+}
+
+.box {
+    background: grey;
+    width: 30%;
 }
