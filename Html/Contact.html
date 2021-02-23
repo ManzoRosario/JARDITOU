@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta charset="utf-8">
+    <title>Jarditou</title>
+</head>
+
+<body>
+    <img class="img" src="img/jarditou_logo.jpg" alt="">
+
+    <div class="text" id="slogan">
+        <p>Tout le jardin</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="indexjarditou.html">accueil</a></li>
+            <li><a href="Tableau.html">Tableau</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bandeau">
+        <img class="promo" src="img/promotion.jpg" alt="">
+
+    </div>
+    <div class="contenu-principal">
+        <div class="text-accueil">
+            <h1>Contact</h1>
+            <hr>
+            <p>*Ces zones sont obligatoires</p>
+            <fieldset>
+                <legend>Coordonnées</legend>
+
+
+
+                <label for="votrenom">Votre nom*:</label>
+                <input type="text" class="form-control" name="nom" id="votrenom" required>
+                <br>
+                <label for="votreprenom">Votre prénom*:</label>
+                <input type="text" class="form-control" name="prenom" id="votreprenom">
+                <br>
+                <p>sexe*</p>
+                <input type="radio" name="sexe" id="Féminin" value="femme" class="form-check-input">Féminin
+                <input type="radio" name="sexe" id="Masculin" value="homme" class="form-check-input">Masculin
+                <br>
+                <label for="date">Date de naissance:</label>
+                <input type="date" class="form-control" name="ddn" id="date">
+                <br>
+                <label for="codepostal">Code postal*:</label>
+                <input type="number" class="form-control" name="Codepostal" id="codepostal">
+                <br>
+                <label for="adresse">Adresse:</label>
+                <input type="text" class="form-control" name="Adresse" id="adresse">
+                <br>
+                <label for="ville">Ville:</label>
+                <input type="text" class="form-control" name="Ville" id="ville">
+                <br>
+                <label for="email">Email*:</label>
+                <input type="text" class="form-control" name="email" id="email">
+                <br>
+
+
+
+                <input type="submit" value="Envoyer">
+                <input type="submit" value="Annuler">
+            </fieldset>
+            <fieldset>
+                <legend>Votre demande</legend>
+
+                <label for="sujet">Sujet*</label>
+                <select id="sujet"> 
+        <option value="" selected>Veuillez séléctionner un sujet</option>
+        <option value="Mes commandes">Mes commandes</option>
+        <option value="Question">Question sur un produit</option>
+        <option value="Réclamation">Réclamation</option>
+        <option value="Autre">Autre</option>
+    </select><br>
+                <label for="votrequestion">Votre question*:</label><input type="text" name="question" id="votrequestion"><br>
+                <input type="checkbox">* J'accepte le traitement informatique de ce formulaire
+            </fieldset>
+            <hr>
+        </div>
+        <div class="box" id="colonne-droite">Colonne droite</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">Plan du site</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+
+
+
+
+</html>

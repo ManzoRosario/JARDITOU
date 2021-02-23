@@ -28,10 +28,12 @@ li {
 
 ul {
     padding: 17px 30px 20px 30px;
+    clear: both;
 }
 
 body {
     max-width: 1000px;
+    margin: auto;
 }
 
 .text {
@@ -56,4 +58,35 @@ body {
 .box {
     background: grey;
     width: 30%;
+}
+
+
+/* media queries */
+
+@media screen and ( max-width :768px) {
+    .box {
+        display: none;
+    }
+    .header {
+        height: auto;
+    }
+    .promo {
+        width: 100%;
+    }
+    .body {
+        width: 100%
+    }
+    .contenu-principal {
+        font-size: 80%;
+    }
+    .text {
+        margin-left: 300px;
+    }
+    li {
+        display: block;
+    }
+    ul {
+        margin: auto;
+        padding: 6px;
+    }
 }
