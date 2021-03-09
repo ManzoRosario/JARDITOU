@@ -19,7 +19,7 @@ var missCheckbox = document.getElementById("missCheckbox")
 var nomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
 var prenomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
 var zipValid = /^\d{5}(?:[-\s]\d{4})?$/;
-
+var emailValid = /^[a-z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}$/;
 
 
 //event click bouton
@@ -72,8 +72,14 @@ function validation(event) {
     // si champs vide
     if (email.validity.valueMissing) {
         event.preventDefault();
-        missEmail.textContent = 'Veuillez inserer une adresse mail valide';
+        missEmail.textContent = 'Veuillez inserer une adresse mail';
         missEmail.style.color = 'red';
+
+        //Si format incorrect
+    } else if (emailValid.test(email.value) == false) {
+        event.preventDefault();
+        missEmail.textContent = 'Inserer une adresse mail valide';
+        missEmail.style.color = 'orange';
     } else {}
 
     //si aucun choix
