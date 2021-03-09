@@ -16,7 +16,7 @@
 
     <nav>
         <ul>
-            <li><a href="indexjarditou.html">accueil</a></li>
+            <li><a href="index.html">accueil</a></li>
             <li><a href="Tableau.html">Tableau</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
@@ -34,37 +34,37 @@
                 <legend>Coordonnées</legend>
 
 
+                <form action="destination.php" method="post" id="formulaire_contact">
+                    <label for="votrenom">Votre nom*:</label>
+                    <input type="text" class="form-control" name="nom" id="votrenom" required>
+                    <br>
+                    <label for="votreprenom">Votre prénom*:</label>
+                    <input type="text" class="form-control" name="prenom" id="votreprenom">
+                    <br>
+                    <p>sexe*</p>
+                    <input type="radio" name="sexe" id="Féminin" value="femme" class="form-check-input">Féminin
+                    <input type="radio" name="sexe" id="Masculin" value="homme" class="form-check-input">Masculin
+                    <br>
+                    <label for="date">Date de naissance:</label>
+                    <input type="date" class="form-control" name="ddn" id="date">
+                    <br>
+                    <label for="codepostal">Code postal*:</label>
+                    <input type="number" class="form-control" name="Codepostal" id="codepostal">
+                    <br>
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" class="form-control" name="Adresse" id="adresse">
+                    <br>
+                    <label for="ville">Ville:</label>
+                    <input type="text" class="form-control" name="Ville" id="ville">
+                    <br>
+                    <label for="email">Email*:</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                    <br>
 
-                <label for="votrenom">Votre nom*:</label>
-                <input type="text" class="form-control" name="nom" id="votrenom" required>
-                <br>
-                <label for="votreprenom">Votre prénom*:</label>
-                <input type="text" class="form-control" name="prenom" id="votreprenom">
-                <br>
-                <p>sexe*</p>
-                <input type="radio" name="sexe" id="Féminin" value="femme" class="form-check-input">Féminin
-                <input type="radio" name="sexe" id="Masculin" value="homme" class="form-check-input">Masculin
-                <br>
-                <label for="date">Date de naissance:</label>
-                <input type="date" class="form-control" name="ddn" id="date">
-                <br>
-                <label for="codepostal">Code postal*:</label>
-                <input type="number" class="form-control" name="Codepostal" id="codepostal">
-                <br>
-                <label for="adresse">Adresse:</label>
-                <input type="text" class="form-control" name="Adresse" id="adresse">
-                <br>
-                <label for="ville">Ville:</label>
-                <input type="text" class="form-control" name="Ville" id="ville">
-                <br>
-                <label for="email">Email*:</label>
-                <input type="text" class="form-control" name="email" id="email">
-                <br>
 
 
-
-                <input type="submit" value="Envoyer">
-                <input type="submit" value="Annuler">
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Annuler">
             </fieldset>
             <fieldset>
                 <legend>Votre demande</legend>
@@ -79,7 +79,9 @@
     </select><br>
                 <label for="votrequestion">Votre question*:</label><input type="text" name="question" id="votrequestion"><br>
                 <input type="checkbox">* J'accepte le traitement informatique de ce formulaire
+
             </fieldset>
+            </form>
             <hr>
         </div>
         <div class="box" id="colonne-droite">Colonne droite</div>
