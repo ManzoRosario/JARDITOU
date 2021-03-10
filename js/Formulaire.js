@@ -63,10 +63,15 @@ function validation(event) {
     } else {}
 
     // si champs vide
-    if (zip.validity.valueMissing) {
+    if (zip.value.length != 5) {
         event.preventDefault();
-        missZip.textContent = 'le code postal manquant';
+        missZip.textContent = 'le code postal est invalide(5 caracteres)';
         missZip.style.color = 'red';
+        //si bon format
+    } else if (zip.value.length == 5) {
+
+        missZip.textContent = 'code postal valide';
+        missZip.style.color = 'green';
     } else {}
 
     // si champs vide
@@ -80,8 +85,13 @@ function validation(event) {
         event.preventDefault();
         missEmail.textContent = 'Inserer une adresse mail valide';
         missEmail.style.color = 'orange';
-    } else {}
 
+        //si bon format
+    } else if (emailValid.test(email.value) == true) {
+
+        missEmail.textContent = 'email valide';
+        missEmail.style.color = 'green';
+    } else {}
     //si aucun choix
     if (sujet.validity.valueMissing) {
         event.preventDefault();
