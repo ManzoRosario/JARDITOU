@@ -40,6 +40,12 @@ function validation(event) {
         event.preventDefault();
         missNom.textContent = 'le format incorrect';
         missNom.style.color = 'orange';
+
+        //si champ correct
+    } else if (nomValid.test(nom.value) == true) {
+
+        missNom.textContent = 'nom valide';
+        missNom.style.color = 'green';
     } else {}
 
     //si champs vide 
@@ -53,6 +59,12 @@ function validation(event) {
         event.preventDefault();
         missPrenom.textContent = 'le format incorrect';
         missPrenom.style.color = 'orange';
+
+        //si champ correct
+    } else if (prenomValid.test(prenom.value) == true) {
+
+        missPrenom.textContent = 'prenom valide';
+        missPrenom.style.color = 'green';
     } else {}
 
     //Si rien n'est indiquer
@@ -60,6 +72,13 @@ function validation(event) {
         event.preventDefault();
         missDate.textContent = 'Veuillez selectionner une date';
         missDate.style.color = 'red';
+
+        // si champ correct
+    } else if (!date.validity.valueMissing) {
+
+        missDate.textContent = 'valide';
+        missDate.style.color = 'green';
+
     } else {}
 
     // si champs vide
@@ -87,7 +106,7 @@ function validation(event) {
         missEmail.style.color = 'orange';
 
         //si bon format
-    } else if (emailValid.test(email.value) == true) {
+    } else if (!emailValid.test(email.value) == false) {
 
         missEmail.textContent = 'email valide';
         missEmail.style.color = 'green';
@@ -97,6 +116,11 @@ function validation(event) {
         event.preventDefault();
         missSujet.textContent = 'Veuillez selectionner un sujet';
         missSujet.style.color = 'red';
+        //si champ correct
+    } else if (!sujet.validity.valueMissing) {
+
+        missSujet.textContent = 'valide';
+        missSujet.style.color = 'green';
     } else {}
 
     //si champs vide
@@ -104,6 +128,11 @@ function validation(event) {
         event.preventDefault();
         missQuestion.textContent = 'Veuillez entrer votre question';
         missQuestion.style.color = 'red';
+        // si champs remplit
+    } else if (!question.validity.valueMissing) {
+
+        missQuestion.textContent = '';
+        missQuestion.style.color = 'green';
     } else {}
 
     // si non cocher
@@ -111,6 +140,11 @@ function validation(event) {
         event.preventDefault();
         missCheckbox.textContent = 'Veuillez cocher la case';
         missCheckbox.style.color = 'red';
+        //si cocher
+    } else if (!checkbox.validity.valueMissing) {
+
+        missCheckbox.textContent = '';
+        missCheckbox.style.color = 'green';
     } else {}
 
 }
